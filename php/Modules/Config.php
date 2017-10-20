@@ -40,6 +40,7 @@ $config = "<?php
 \$dbTablePrefix = '$prefix'; // Table prefix
 \$mediumWidth = 1920; // Width of medium sized images
 \$mediumHeight = 1080; // Height of medium sized images
+\$mediumQuality = 90; // Quality of medium-photo
 
 ?>";
 
@@ -73,7 +74,8 @@ $config = "<?php
 			'name'     => $dbName,
 			'prefix'   => $dbTablePrefix,
             'mediumWidth' => $mediumWidth ?: 1920,
-            'mediumHeight' => $mediumHeight ?: 1080
+            'mediumHeight' => $mediumHeight ?: 1080,
+            'mediumQuality' => $mediumQuality ?: 90
 		));
 
 	}
