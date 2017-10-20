@@ -38,6 +38,8 @@ $config = "<?php
 \$dbPassword = '$password'; // Password of the database
 \$dbName = '$name'; // Database name
 \$dbTablePrefix = '$prefix'; // Table prefix
+\$mediumWidth = 1920; // Width of medium sized images
+\$mediumHeight = 1080; // Height of medium sized images
 
 ?>";
 
@@ -69,7 +71,9 @@ $config = "<?php
 			'user'     => $dbUser,
 			'password' => $dbPassword,
 			'name'     => $dbName,
-			'prefix'   => $dbTablePrefix
+			'prefix'   => $dbTablePrefix,
+            'mediumWidth' => $mediumWidth ?: 1920,
+            'mediumHeight' => $mediumHeight ?: 1080
 		));
 
 	}

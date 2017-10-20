@@ -406,8 +406,9 @@ final class Photo {
 		// Size of the medium-photo
 		// When changing these values,
 		// also change the size detection in the front-end
-		$newWidth  = 1920;
-		$newHeight = 1080;
+        $config = Config::get();
+        $newWidth = $config['mediumWidth'];
+        $newHeight = $config['mediumHeight'];
 
 		// Check permissions
 		if (hasPermissions(LYCHEE_UPLOADS_MEDIUM)===false) {
